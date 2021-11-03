@@ -1,0 +1,93 @@
+@import "./__general.scss";
+@import "./__works.scss";
+@import "./__landing.scss";
+
+
+html, body, #root{
+    margin: 0;
+    background-color: var(--background-color);
+    color: var(--font-color);
+    height: 100%;
+    font-family: var(--font-style);
+}
+
+a{
+    color: var(--font-color);
+    text-decoration: none;
+    &:hover{
+        color: var(--highlights);
+    }
+}
+
+nav{
+    @include flex-row;
+    box-sizing: border-box;
+    background-color: var(--background-color);
+    top: 0;
+    z-index: 1000;
+    padding: 0 1em;
+    width: 100%;
+    justify-content: center;
+    a{
+        padding: .5em;
+        font-size: 1.2em;
+    }
+    @media screen and (min-width: 500px) {
+        justify-content: flex-end;
+        a{
+            padding: .7em;
+            font-size: 1.5em;
+        }
+    }
+}
+
+.theme-toggle{
+    width: var(--theme-toggle-size);
+    height: var(--theme-toggle-size);
+    border-bottom-right-radius: var(--theme-toggle-size);
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--highlights);
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+.main, #landing{
+    margin: 2em auto;
+    padding: 1.5em;
+    max-width: 1000px;
+    @media screen and (min-width: 500px) {
+        padding: 2em;
+    }
+}
+
+footer{
+    width: 100%;
+    text-align: center;
+    padding: .5em 0;
+    color: var(--highlights);
+}
+
+/* Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: var(--scroll-thumb) var(--scroll-track);
+}
+  
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 12px;
+}
+  
+*::-webkit-scrollbar-track {
+    background: var(--scroll-track);
+}
+  
+*::-webkit-scrollbar-thumb {
+    background-color: var(--scroll-thumb);
+    border-radius: 20px;
+    border: none;
+}
+

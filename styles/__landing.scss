@@ -1,0 +1,48 @@
+
+div#landing{
+    @include centered-container;
+    height: calc(100vh - 4em);
+    padding-top: 0;
+    padding-bottom: 0;
+    
+    h1{
+        font-size: calc(2em + 3vw);
+        margin-bottom: .2em;
+        span{
+            color: var(--highlights);
+        }
+    }
+    h2{
+        margin-top: 0;
+        font-weight: 200;
+        font-size: 1.5em;
+    }
+    .links{
+        align-self: center;
+        width: 60%;
+        margin-top: 1em;
+        padding-top: 1em;
+        border-top: 1px solid var(--highlights);
+        a{
+            padding: 0 .2em;
+            font-size: calc(1em + 1vw);
+        }
+    }
+    
+    @media screen and (min-width: 870px) {
+        .links a{
+            padding: 0 .5em;
+        }
+    }
+
+    @media screen and (min-width: 1500px) {
+        h1{
+            font-size: 4.5em;
+        }
+        .links a{
+            font-size: 1.5em;
+            padding: 0 .8em;
+        }
+        
+    }
+}
