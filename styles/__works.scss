@@ -32,8 +32,13 @@
     }
 }
 
+#projects .project .image-container a{
+    padding: 0;
+}
+
 .image-container{
     position: relative;
+
     img{
         border-radius: 2px;
     }

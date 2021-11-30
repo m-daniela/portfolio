@@ -11,12 +11,11 @@
 }
 
 [data-theme="dark"] {
-  --background-color: #292626;
-  --font-color: #76A49F;
-  --titles: #ADCDD6;
-  --highlights: #A88C8A;
+  --background-color: #111;
+  --font-color: #d4d4d4;
+  --highlights: #01bb88;
   --scroll-track: #292626;
-  --scroll-thumb: #69918b;
+  --scroll-thumb: #555;
 }
 
 #projects {
@@ -67,6 +66,10 @@
         grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     grid-gap: 3em;
   }
+}
+
+#projects .project .image-container a {
+  padding: 0;
 }
 
 .image-container {
@@ -234,16 +237,20 @@ nav a {
   cursor: pointer;
 }
 
-.main, #landing {
+main, #landing {
   margin: 2em auto;
   padding: 1.5em;
   max-width: 1000px;
 }
 
 @media screen and (min-width: 500px) {
-  .main, #landing {
+  main, #landing {
     padding: 2em;
   }
+}
+
+#about {
+  text-align: justify;
 }
 
 footer {
