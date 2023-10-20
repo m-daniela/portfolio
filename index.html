@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="My name is Daniela and I am a web developer based in Romania. I currently have experience with Flask, but I have also created projects with other technologies.">
+    <meta name="keywords" content="Web Development, Javascript, Typescript, React, Redux, Next.js, express.js, Python, Flask, HTML, CSS, databases">
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" href="assets/icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+    <title>Daniela Moș</title>
+</head>
+<body>
+    <nav>
+        <a href="https://www.linkedin.com/in/daniela-mos-ro/"><img src = "assets/linkedin.svg" alt="LinkedIn" width="25"/></a>
+        <a href="https://github.com/m-daniela"><img src = "assets/github.svg" alt="Github" width="25"/></a>
+        <!-- <img src = "assets/map-marker-6-svgrepo-com.svg" alt="Map Marker" width="25"/> -->
+        <!-- <span>RO</span> -->
+    </nav>
+    <main>
+        <header>
+            <h1 id="description">
+                Daniela Moș
+            </h1>
+            <p>Web Developer</p>
+        </header>
+        <aside>
+            <h2>Projects</h2>
+            <ul>
+                <li id="issue-tracker">Peronal Issue Tracker</li>
+                <li id="zephon">Zephon</li>
+                <li id="library">The Library</li>
+                <li id="news">News Aggregator</li>
+                <li id="breadit">Breadit</li>
+            </ul>
+        </aside>
+        <section>
+            <article id="description-article" class="selected-article">
+                <p>My name is Daniela and I am a web developer based in Romania.</p>
+                <p>I currently have work experience as a <span>Flask</span> developer, but I have also explored various other libraries and frameworks through personal projects, including <span>React, Next.js, express.js, FastAPI, Selenium, beautifulsoup</span>.</p>
+            </article>
+            <article id="issue-tracker-article">
+                <p><strong>Personal Issue Tracker</strong> is a customizable Kanban-style board for issue tracking, created with <span>Next.js 13, Redux Toolkit, Firebase Firestore, dnd kit, SASS</span>.</p>
+                <p>The user can add projects and create new tasks, organize them by categories, track their progress, document the issues.</p>
+                <p>It also has a filtering feature, so the tasks can be searched by label and by title.</p>
+                <a href="https://github.com/m-daniela/personal-issue-tracker" target="_blank">code</a>
+            </article>
+            <article id="zephon-article">
+                <p><strong>Zefon</strong> is an instant messaging application with end-to-end encryption and support for attachments and group chats.</p>
+                <p>In order to create it, I have used <span>React, Redux Toolkit, express.js, Firebase Firestore, Firebase Authentication, socket.io, SASS</span>. The end-to-end encryption logic was built using the <span>VirgilSecurity</span> framework.</p>
+                <p>The user first registers with an email, then they can create private or group chats, with or without encryption. Each chat has a "3rd party view" toggle, so the user can see what data is available to the provider.</p>
+                <p>I have created this application while I was completing my Bachelor's degree, but I have started working on a new, updated version, with <span>Typescript</span>.</p>
+                <a href="https://github.com/m-daniela/chat-app" target="_blank">code</a>
+                <a href="https://github.com/m-daniela/zephon" target="_blank">code v2</a>
+            </article>
+            <article id="library-article">
+                <p><strong>The Library</strong> is a role-based library app with <span>JWT authentication</span>, created with <span>FastAPI, React, postgresql, SQLAlchemy</span> and tested with <span>pytest</span>.</p>
+                <p>The users can be normal users, who can browse, filter, borrow, return books, check and change their profile information, admins, who have acces to other functionalities, such as accepting new users and generating reports, and contact users, who only have access to the chat and all conversations.</p>
+                <p>Normal users and admins have a single chat window and can talk to the contact users. This functionality was implemented using <span>socket.io</span>.</p>
+                <p>It also has a mailing feature, implemented using <span>Celery</span>, which automatically sends emails to the users on registration, after the borrowing period has expired, or on book checkout.</p>
+                <p>I have implemented some functionalities using <span>Flask</span>.</p>
+                <a href="https://github.com/m-daniela/library" target="_blank">code</a>
+                <a href="https://github.com/m-daniela/library/tree/flask" target="_blank">code with Flask</a>
+            </article>
+            <article id="news-article">
+                <p>As the name suggests, <strong>News Aggregator</strong> is a simple news aggregator, created using <span>React, Flask</span> and <span>beautifulsoup4</span> to scrape from various Romanian and international news portals.</p>
+                <p>The article sanitization process is done on the backend, then the information is sent to the frontend to be displayed.</p>
+                <a href="https://github.com/m-daniela/News-Aggregator" target="_blank">code</a>
+            </article>
+            <article id="breadit-article">
+                <p><strong>Breadit</strong> is an online forum-like platform for food related discussion, sharing recipes and tips, latest bakes etc. The format is similar Reddit, but all posts are anonymous.</p>
+                <p>I have created it using <span>React, Redux Toolkit, express.js, MySQL, SASS</span>. It also has an integrated Rich Text Editor implemented using <span>react-quill</span> and a post search feature.</p>
+                <a href="https://github.com/m-daniela/breadit-old" target="_blank">code</a>
+            </article>
+        </section>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
