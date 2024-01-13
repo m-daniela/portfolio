@@ -10,7 +10,7 @@
 
 * {
     box-sizing: border-box;
-
+    line-height: 1.2em;
     scrollbar-color: var(--scrollbar-tracker) var(--background);
     scrollbar-width: thin;
 }
@@ -43,13 +43,15 @@ a:hover {
 }
 
 nav {
+    display: flex;
+    justify-content: flex-end;
     margin: 0 auto;
     width: calc(100% - 4em);
     max-width: 750px;
 }
 
 nav a {
-    margin-right: 3px;
+    margin-left: 7px;
 }
 
 main {
@@ -59,8 +61,8 @@ main {
     border: 1px solid var(--font);
     width: calc(100% - 4em);
     max-width: 750px;
-    /* height: fit-content; */
-    height: 370px;
+    height: fit-content;
+    /* height: 370px; */
     /* max-height: 50%; */
     display: grid;
     grid-template-columns: 1fr 4fr;
@@ -77,6 +79,17 @@ aside {
 ul {
     list-style-type: none;
     padding: 0;
+}
+
+article ul {
+    list-style-type: circle;
+    padding-left: 2em;
+}
+
+article ul li:hover {
+    text-decoration: unset;
+    color: unset;
+    cursor: default;
 }
 
 li {
@@ -124,6 +137,7 @@ h2 {
 article {
     height: 0;
     opacity: 0;
+    display: none;
 }
 
 article p {
@@ -141,14 +155,26 @@ article a {
 
 .selected-article {
     height: auto;
+    display: block;
     opacity: 1;
-    transition: 1s ease-in-out;
+    animation: fade-in-article 2s;
 }
 
 .selected-article p {
     height: auto;
     margin: 1em 0;
 }
+
+@keyframes fade-in-article {
+    from { 
+        display: none; 
+        opacity: 0;
+    }
+    to { 
+        display: block; 
+        opacity: 1;
+    }
+  }
 
 @media only screen and (max-width: 600px) {
     body {

@@ -16,8 +16,6 @@
     <nav>
         <a href="https://www.linkedin.com/in/daniela-mos-ro/"><img src = "assets/linkedin.svg" alt="LinkedIn" width="25"/></a>
         <a href="https://github.com/m-daniela"><img src = "assets/github.svg" alt="Github" width="25"/></a>
-        <!-- <img src = "assets/map-marker-6-svgrepo-com.svg" alt="Map Marker" width="25"/> -->
-        <!-- <span>RO</span> -->
     </nav>
     <main>
         <header>
@@ -29,17 +27,30 @@
         <aside>
             <h2>Projects</h2>
             <ul>
-                <li id="issue-tracker">Peronal Issue Tracker</li>
+                <li id="jobs">Job Aggregator</li>
                 <li id="zephon">Zephon</li>
                 <li id="library">The Library</li>
+                <li id="issue-tracker">Peronal Issue Tracker</li>
                 <li id="news">News Aggregator</li>
                 <li id="breadit">Breadit</li>
+                <li id="various">Exercise Projects</li>
             </ul>
         </aside>
         <section>
             <article id="description-article" class="selected-article">
                 <p>My name is Daniela and I am a web developer based in Romania.</p>
-                <p>I currently have work experience as a <span>Flask</span> developer, but I have also explored various other libraries and frameworks through personal projects, including <span>React, Next.js, express.js, FastAPI, Selenium, beautifulsoup</span>.</p>
+                <p>Since 2021, I have been continuously developing my programming skills and exploring various libraries and frameworks, with my main focus being on:</p>
+                <ul>
+                    <li>
+                        full stack applications, using <span>React, Redux, SCSS, express.js, Flask, FastAPI</span> and both sql and nosql databases
+                    </li>
+                    <li>
+                        web scrapers with <span>beautifulsoup4</span>
+                    </li>
+                    <li>
+                        automation scripts with <span>Python</span> 
+                    </li>
+                </ul>
             </article>
             <article id="issue-tracker-article">
                 <p><strong>Personal Issue Tracker</strong> is a customizable Kanban-style board for issue tracking, created with <span>Next.js 13, Redux Toolkit, Firebase Firestore, dnd kit, SASS</span>.</p>
@@ -73,6 +84,17 @@
                 <p><strong>Breadit</strong> is an online forum-like platform for food related discussion, sharing recipes and tips, latest bakes etc. The format is similar Reddit, but all posts are anonymous.</p>
                 <p>I have created it using <span>React, Redux Toolkit, express.js, MySQL, SASS</span>. It also has an integrated Rich Text Editor implemented using <span>react-quill</span> and a post search feature.</p>
                 <a href="https://github.com/m-daniela/breadit-old" target="_blank">code</a>
+            </article>
+            <article id="jobs-article">
+                <p><strong>Job Aggregator</strong> is a web scraper which collects the jobs from various job boards and displayes them in a clear and simplified manner.</p>
+                <p>The user can input a list of urls that will be scraped or the HTML itself. After these are parsed, the user has access to all available jobs and advanced filters based on the current data.</p>
+                <p>The filtering system includes: common searches, filter by date, application type, company, location, general location (country, continent, economic zone), job type, and the sorting system: sort alphabetically, by date.</p>
+                <p>Since the location and company options might get large, these sections have an integrated search bar, with debounce, to narrow the results.</p>
+                <p>I have created it using <span>React, Tailwind CSS, Flask, SQLAlchemy, sqlite3, pyautogui, beautifulsoup4, pytest</span>.</p>
+            </article>
+            <article id="various-article">
+                <p>In order to keep up with the constant changes, I have created a collection of small apps, mostly testing component libraries or new libraries/ frameworks.</p>
+                <a href="https://github.com/m-daniela/component-libs-testing" target="_blank">code</a>
             </article>
         </section>
     </main>
